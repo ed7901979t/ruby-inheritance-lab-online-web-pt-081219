@@ -1,14 +1,11 @@
+class Teacher
 class Teacher < User
 
-  KNOWLEDGE = ["a String is a type of data in Ruby", "programming is hard, but it's worth it", "javascript async web request", "Ruby method call definition", "object oriented dog cat class instance", "class method class variable instance method instance variable", "programming computers hacking learning terminal", "bash Ruby rvm update certs"]
+  KNOWLEDGE = ["a String is a type of data in Ruby", "programming is hard, but it's worth it", "javacsript async web request", "Ruby method call definition", "object oriented dog cat class instance", "class method class variable instance method instance varaible", "programming computers hacking learning terminal", "bash Ruby rvm update certs"]
 
-  def self.random_select_right_hand(array, n)
-  result = []
-  n.times do 
-    result << array[rand(array.length)]
+
+  def teach
+    KNOWLEDGE.sample
   end
-  result
-end
 
-self.random_select_right_hand(KNOWLEDGE, 1)
-end
+end 
